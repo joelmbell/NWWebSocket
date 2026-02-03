@@ -557,6 +557,7 @@ open class NWWebSocket: WebSocketConnection {
             || code == .ENOTCONN
             || code == .ECANCELED
             || code == .ENETDOWN
+            || code == .ENODATA
             || code == .ECONNABORTED {
             return true
         } else {
